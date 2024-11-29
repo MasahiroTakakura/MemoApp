@@ -1,10 +1,15 @@
 import { View, StyleSheet } from 'react-native'
 // import { Feather } from '@expo/vector-icons';
+import { router } from 'expo-router'
 
 import Header from '../../components/header'
 import MemoListItem from '../../components/MemoListItem'
 import CircleButton from '../../components/CircleButton';
 import Icon from '../../components/icon';
+
+const handlePress = (): void => {
+  router.push('/memo/create')
+}
 
 const Index = (): JSX.Element => {
   return (
@@ -15,7 +20,7 @@ const Index = (): JSX.Element => {
         <MemoListItem />
         <MemoListItem />
       </View>
-      <CircleButton>
+      <CircleButton onPress={handlePress}>
         {/* <Feather name='plus' size={40} /> */}
         <Icon name='plus' size={40} color='#ffffff' />
       </CircleButton>
