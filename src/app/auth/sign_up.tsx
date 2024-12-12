@@ -40,7 +40,7 @@ const SignUp = ():JSX.Element => {
        autoCapitalize='none'
        keyboardType='email-address'
        placeholder='Email Address'
-       textContentType='emailAdress'
+       textContentType='emailAddress'
        />
       <TextInput
        style={styles.input}
