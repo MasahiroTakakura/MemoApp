@@ -31,7 +31,9 @@ const Create = (): JSX.Element => {
  return (
    <KeyboardAvoidingView behavior='height' style={styles.container}>
      <View style={styles.inputContainer}>
-       <TextInput multiline style={styles.input} value={bodyText} onChangeText={(text) => { setBodyText(text) }}/>
+       <TextInput multiline style={styles.input} value={bodyText} onChangeText={(text) => { setBodyText(text) }}
+        autoFocus
+        />
      </View>
      <CircleButton onPress={() => {handlePress(bodyText)}}>
        <Icon name='check' size={40} color='#ffffff' />
